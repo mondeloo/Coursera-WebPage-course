@@ -1,0 +1,71 @@
+/* Simple Responsive Framework. */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+.row {
+  width: 100%;
+  margin:15px 0px;
+}
+#title,h1,h2{
+  font-family:"Verdana", Sans-serif;
+}
+#title{
+  text-align:center;
+}
+h2{
+  display:inline-block;
+  width:35%;
+  border-left:2px solid black;
+  border-bottom:2px solid black;
+  position:relative;
+  left:65%;
+  text-align:center;
+}
+#chicken{
+  background:rgba(240, 29, 29, 0.74);
+}
+#beef{
+  background:rgba(255, 208, 0, 0.534)
+}
+#sushi{
+  background:rgba(17, 17, 245, 0.493);
+}
+p{
+  padding: 10px;
+  font-size:24px;
+}
+section{
+  background:rgba(128, 128, 128, 0.699);
+  border:2px solid black;
+}
+/********** Large devices only **********/
+@media(min-width:992px) {
+  .col-lg-4 {
+    float:left;
+    width: 28.90%;
+    margin-left:3.33%;
+    margin-bottom:20px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width:768px) and (max-width:991px) {
+  .col-md-6 {
+    float:left;
+    margin-left:8%;
+    width: 38%;
+    margin-bottom:20px;
+  }
+  }
+/********* Small devices only ********/
+@media (max-width:767px) {
+  .col-sm-12 {
+    float:left;
+    margin-left:10%;
+    width: 80%;
+    margin-bottom:20px;
+  }
+}
+
